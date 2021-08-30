@@ -1,0 +1,29 @@
+<html>
+	<head>
+    	<body>
+        	Solução de baskara
+            <p id='resp'></p>
+            <p id='concavidade'></p>
+        </body>
+	</head>
+</html>
+
+<script language='javascript'>
+	var a,b,c;
+    a = parseFloat(prompt('a: ')); //parseInt e parseFloat (reais)
+    if (a != 0) {
+    	b = parseFloat(prompt('b: '));
+   		c = parseFloat(prompt('c: '));
+        var delta = b**2 - 4*a*c;
+        if (delta >= 0) {
+        	var x1 = (-b + Math.sqrt(delta)) / (2*a);
+            var x2 = (-b - Math.sqrt(delta)) / (2*a);
+            document.getElementById('resp').innerHTML = 'x1: ' + x1 + ', ' + 'x2: ' + x2 + '<br>';
+            if (a > 0) document.getElementById('concavidade').innerHTML = 'Para cima';
+            else document.getElementById('concavidade').innerHTML = 'Para baixo';
+        } else {
+        	document.getElementById('resp').innerHTML = 'Raízes não pertencem aos reais<br>';
+        }
+    } else alert('a não pode ser igual a 0');  
+    
+</script>
