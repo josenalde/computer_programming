@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Calcule seu peso ideal</title>
+</head>
+<body>
+    <img src="img/balanca.jpg" alt="Balança de Peso">
+    <h1>Calcule aqui o seu peso ideal</h1>
+    <p>Nome: <input type="text" id="txtNome"></p>
+    <p>Sexo: <input type="radio" name="sexo" id="rbMasc">M
+        <input type="radio" name="sexo" id="rbFemi">F   
+    </p>
+    <p>Altura (use ponto para decimais): <input type="text" id="txtAltura"></p>
+    <p><button id="btCalcular">Calcular</button>
+       <button id="btLimpar">Limpar campos</button>
+    </p>
+    <h3 id="outResposta"></h3>
+    <script src="src/pesobkend.js"></script>
+</body>
+</html>
