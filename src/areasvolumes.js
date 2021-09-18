@@ -15,6 +15,7 @@ if (op1 == 1) {
 				A = b*h;
 				console.log('Área: %f cm2', A.toFixed(2));
 			}
+			break;
 		}
 		case 'b': {
 			var r;
@@ -23,6 +24,7 @@ if (op1 == 1) {
 				A = Math.PI*(r**2);
 				console.log('Área: %f cm2', A.toFixed(2));
 			}
+			break;
 		}
 		case 'c': {
 			var b, h;
@@ -32,6 +34,7 @@ if (op1 == 1) {
 				A = (b*h)/2;
 				console.log('Área: %f cm2', A.toFixed(2));
 			}
+			break;
 		}
 		case 'd': {
 			var B, b, h;
@@ -42,6 +45,7 @@ if (op1 == 1) {
 				A = ((B+b)*h)/2;
 				console.log('Área: %f cm2', A.toFixed(2));
 			}
+			break;
 		}
 		default: console.log('Area de figura invalida');
 	}	
